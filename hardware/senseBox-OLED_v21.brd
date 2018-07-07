@@ -77,7 +77,7 @@
 <text x="41" y="12.5" size="0.8" layer="1" font="vector" ratio="20" rot="R270" align="center">Rev 2.1</text>
 <text x="8.125" y="6.25" size="0.8" layer="22" font="vector" ratio="15" rot="MR90">0x3C closed</text>
 <text x="9.25" y="6.25" size="0.8" layer="22" font="vector" ratio="15" rot="MR90">0x3D open</text>
-<text x="2" y="12.5" size="1" layer="21" font="vector" ratio="15" rot="R90" align="top-center">Univision/WiseChip
+<text x="2" y="12.5" size="1" layer="21" font="vector" ratio="15" rot="R90" align="top-center">WiseChip
 UG-2864HSWEG01</text>
 <wire x1="10.25" y1="4.75" x2="7.75" y2="4.75" width="0.2" layer="22"/>
 <wire x1="7.75" y1="4.75" x2="7.75" y2="3.25" width="0.2" layer="22"/>
@@ -849,7 +849,7 @@ UG-2864HSWEG01</text>
 <element name="IC2" library="we-power" package="SOT23" value="VREG-TS9011-3V3" x="33.625" y="18" rot="MR0"/>
 <element name="C4" library="we-rcl" package="C0402" value="100n" x="36.125" y="11.125" rot="MR180"/>
 <element name="C1" library="we-rcl" package="C0402" value="100n" x="33.25" y="15.625" rot="MR90"/>
-<element name="LCD1" library="we-opto" package="UG2864HSWEG01_BOT" value="UG2864HSWEG01-B" x="22.5" y="2.75"/>
+<element name="OLED" library="we-opto" package="UG2864HSWEG01_BOT" value="UG2864HSWEG01-B" x="22.5" y="2.75"/>
 <element name="R6" library="we-rcl" package="C0402" value="4k7" x="21.625" y="8.75" rot="MR90"/>
 <element name="C6" library="we-rcl" package="C0402" value="2u2" x="31.625" y="9.25" rot="MR0"/>
 <element name="C7" library="we-rcl" package="C0402" value="2u2" x="18.625" y="9.25" rot="MR0"/>
@@ -888,18 +888,18 @@ UG-2864HSWEG01</text>
 <contactref element="IC2" pad="1"/>
 <contactref element="C4" pad="1"/>
 <contactref element="C1" pad="1"/>
-<contactref element="LCD1" pad="12"/>
+<contactref element="OLED" pad="12"/>
 <contactref element="J1" pad="1"/>
-<contactref element="LCD1" pad="29"/>
-<contactref element="LCD1" pad="30"/>
-<contactref element="LCD1" pad="1"/>
-<contactref element="LCD1" pad="8"/>
+<contactref element="OLED" pad="29"/>
+<contactref element="OLED" pad="30"/>
+<contactref element="OLED" pad="1"/>
+<contactref element="OLED" pad="8"/>
 <contactref element="R5" pad="2"/>
 <contactref element="C5" pad="1"/>
 <contactref element="C8" pad="1"/>
 <contactref element="C7" pad="1"/>
 <contactref element="C6" pad="1"/>
-<contactref element="LCD1" pad="10"/>
+<contactref element="OLED" pad="10"/>
 <via x="7.5" y="22.5" extent="1-16" drill="0.3"/>
 <contactref element="J2" pad="1"/>
 <via x="7.5" y="2.5" extent="1-16" drill="0.3"/>
@@ -964,12 +964,12 @@ UG-2864HSWEG01</text>
 <contactref element="T3" pad="5"/>
 <contactref element="IC2" pad="2"/>
 <contactref element="C4" pad="2"/>
-<contactref element="LCD1" pad="13"/>
-<contactref element="LCD1" pad="11"/>
+<contactref element="OLED" pad="13"/>
+<contactref element="OLED" pad="11"/>
 <contactref element="R6" pad="2"/>
-<contactref element="LCD1" pad="6"/>
+<contactref element="OLED" pad="6"/>
 <contactref element="C8" pad="2"/>
-<contactref element="LCD1" pad="9"/>
+<contactref element="OLED" pad="9"/>
 <contactref element="C7" pad="2"/>
 <wire x1="15.85" y1="6.5" x2="15.85" y2="7.725" width="0.254" layer="16"/>
 <wire x1="15.85" y1="7.725" x2="16.375" y2="8.25" width="0.254" layer="16"/>
@@ -1017,8 +1017,8 @@ UG-2864HSWEG01</text>
 <signal name="LV_SDA">
 <contactref element="R1" pad="1"/>
 <contactref element="T3" pad="1"/>
-<contactref element="LCD1" pad="20"/>
-<contactref element="LCD1" pad="19"/>
+<contactref element="OLED" pad="20"/>
+<contactref element="OLED" pad="19"/>
 <wire x1="25.65" y1="6.5" x2="25.65" y2="7.85" width="0.254" layer="16"/>
 <wire x1="25.65" y1="7.85" x2="25.625" y2="7.875" width="0.2032" layer="16"/>
 <wire x1="25.625" y1="7.875" x2="25" y2="7.875" width="0.254" layer="16"/>
@@ -1064,7 +1064,7 @@ UG-2864HSWEG01</text>
 <signal name="LV_SCL">
 <contactref element="R4" pad="1"/>
 <contactref element="T3" pad="4"/>
-<contactref element="LCD1" pad="18"/>
+<contactref element="OLED" pad="18"/>
 <wire x1="32.975" y1="11.875" x2="32.625" y2="11.875" width="0.2032" layer="16"/>
 <wire x1="32.625" y1="11.875" x2="32.375" y2="11.625" width="0.2032" layer="16"/>
 <wire x1="32.375" y1="11.625" x2="31.875" y2="11.625" width="0.2032" layer="16"/>
@@ -1078,7 +1078,7 @@ UG-2864HSWEG01</text>
 <wire x1="31" y1="11.625" x2="31.875" y2="11.625" width="0.2032" layer="16"/>
 </signal>
 <signal name="SA0">
-<contactref element="LCD1" pad="15"/>
+<contactref element="OLED" pad="15"/>
 <contactref element="R6" pad="1"/>
 <contactref element="J1" pad="2"/>
 <wire x1="22.15" y1="6.5" x2="22.15" y2="8.725" width="0.254" layer="16"/>
@@ -1092,53 +1092,53 @@ UG-2864HSWEG01</text>
 <wire x1="21.625" y1="4" x2="19" y2="4" width="0.2032" layer="16"/>
 </signal>
 <signal name="C2N">
-<contactref element="LCD1" pad="3"/>
+<contactref element="OLED" pad="3"/>
 <contactref element="C9" pad="1"/>
 <wire x1="13.75" y1="6.5" x2="13.75" y2="8.5" width="0.254" layer="16"/>
 <wire x1="13.75" y1="8.5" x2="13.5" y2="8.75" width="0.254" layer="16"/>
 </signal>
 <signal name="C2P">
-<contactref element="LCD1" pad="2"/>
+<contactref element="OLED" pad="2"/>
 <contactref element="C9" pad="2"/>
 <wire x1="13.05" y1="6.5" x2="13.05" y2="7.825" width="0.254" layer="16"/>
 <wire x1="13.05" y1="7.825" x2="12.5" y2="8.375" width="0.254" layer="16"/>
 <wire x1="12.5" y1="8.375" x2="12.5" y2="8.75" width="0.254" layer="16"/>
 </signal>
 <signal name="C1N">
-<contactref element="LCD1" pad="5"/>
+<contactref element="OLED" pad="5"/>
 <contactref element="C10" pad="1"/>
 <wire x1="15.15" y1="6.5" x2="15.15" y2="7.9" width="0.254" layer="16"/>
 <wire x1="15.15" y1="7.9" x2="15.625" y2="8.375" width="0.254" layer="16"/>
 <wire x1="15.625" y1="8.375" x2="15.625" y2="8.75" width="0.254" layer="16"/>
 </signal>
 <signal name="C1P">
-<contactref element="LCD1" pad="4"/>
+<contactref element="OLED" pad="4"/>
 <contactref element="C10" pad="2"/>
 <wire x1="14.45" y1="6.5" x2="14.45" y2="8.575" width="0.254" layer="16"/>
 <wire x1="14.45" y1="8.575" x2="14.625" y2="8.75" width="0.254" layer="16"/>
 </signal>
 <signal name="IREF">
-<contactref element="LCD1" pad="26"/>
+<contactref element="OLED" pad="26"/>
 <contactref element="R5" pad="1"/>
 <wire x1="29.85" y1="6.5" x2="29.85" y2="7.775" width="0.254" layer="16"/>
 <wire x1="29.85" y1="7.775" x2="29.375" y2="8.25" width="0.254" layer="16"/>
 <wire x1="29.375" y1="8.25" x2="29.375" y2="8.75" width="0.254" layer="16"/>
 </signal>
 <signal name="VCH">
-<contactref element="LCD1" pad="27"/>
+<contactref element="OLED" pad="27"/>
 <contactref element="C5" pad="2"/>
 <wire x1="30.55" y1="6.5" x2="30.55" y2="8.7" width="0.254" layer="16"/>
 <wire x1="30.55" y1="8.7" x2="30.5" y2="8.75" width="0.254" layer="16"/>
 </signal>
 <signal name="VC">
-<contactref element="LCD1" pad="28"/>
+<contactref element="OLED" pad="28"/>
 <contactref element="C6" pad="2"/>
 <wire x1="31.25" y1="6.5" x2="31.25" y2="7.75" width="0.254" layer="16"/>
 <wire x1="31.25" y1="7.75" x2="31.625" y2="8.125" width="0.254" layer="16"/>
 <wire x1="31.625" y1="8.125" x2="31.625" y2="8.75" width="0.254" layer="16"/>
 </signal>
 <signal name="RST">
-<contactref element="LCD1" pad="14"/>
+<contactref element="OLED" pad="14"/>
 <contactref element="IC4" pad="2"/>
 <wire x1="21.45" y1="6.5" x2="21.45" y2="4.95" width="0.2032" layer="16"/>
 <wire x1="21.45" y1="4.95" x2="21.375" y2="4.875" width="0.2032" layer="16"/>

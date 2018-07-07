@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -1730,7 +1730,7 @@ BSS138 (Vgs&amp;gt;=+/-20V, Vds&amp;gt;=40V, Id&amp;gt;=0.2A + Rds&amp;lt;=3Ohm 
 <part name="IC2" library="we-power" deviceset="VREG" device="-TS9011-3V3"/>
 <part name="C4" library="we-rcl" deviceset="CAPACITOR" device="-0402" value="100n"/>
 <part name="C1" library="we-rcl" deviceset="CAPACITOR" device="-0402" value="100n"/>
-<part name="LCD1" library="we-opto" deviceset="UG2864HSWEG01" device="-B"/>
+<part name="OLED" library="we-opto" deviceset="UG2864HSWEG01" device="-B"/>
 <part name="P+7" library="supply1" deviceset="VCC" device=""/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="R6" library="we-rcl" deviceset="RESISTOR" device="-0402" value="4k7"/>
@@ -1795,7 +1795,7 @@ Designed by Watterott electronic for senseBox https://sensebox.de</text>
 <instance part="IC2" gate="IC" x="113.03" y="24.13"/>
 <instance part="C4" gate="C" x="139.7" y="21.59" rot="R90"/>
 <instance part="C1" gate="C" x="86.36" y="21.59" rot="R90"/>
-<instance part="LCD1" gate="LCD" x="113.03" y="114.3"/>
+<instance part="OLED" gate="LCD" x="113.03" y="114.3"/>
 <instance part="P+7" gate="VCC" x="85.09" y="147.32" smashed="yes">
 <attribute name="VALUE" x="86.995" y="149.86" size="1.778" layer="96" rot="R180"/>
 </instance>
@@ -1843,27 +1843,27 @@ Designed by Watterott electronic for senseBox https://sensebox.de</text>
 <junction x="95.25" y="16.51"/>
 </segment>
 <segment>
-<pinref part="LCD1" gate="LCD" pin="BS2"/>
+<pinref part="OLED" gate="LCD" pin="BS2"/>
 <wire x1="92.71" y1="127" x2="90.17" y2="127" width="0.1524" layer="91"/>
 <wire x1="92.71" y1="132.08" x2="90.17" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="90.17" y1="132.08" x2="90.17" y2="127" width="0.1524" layer="91"/>
 <pinref part="GND7" gate="1" pin="GND"/>
 <wire x1="90.17" y1="127" x2="90.17" y2="125.73" width="0.1524" layer="91"/>
 <junction x="90.17" y="127"/>
-<pinref part="LCD1" gate="LCD" pin="BS0"/>
+<pinref part="OLED" gate="LCD" pin="BS0"/>
 </segment>
 <segment>
 <pinref part="J1" gate="J" pin="1"/>
 <pinref part="GND8" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="LCD1" gate="LCD" pin="AGND"/>
-<pinref part="LCD1" gate="LCD" pin="GND@3"/>
+<pinref part="OLED" gate="LCD" pin="AGND"/>
+<pinref part="OLED" gate="LCD" pin="GND@3"/>
 <wire x1="133.35" y1="86.36" x2="133.35" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="LCD1" gate="LCD" pin="GND@2"/>
+<pinref part="OLED" gate="LCD" pin="GND@2"/>
 <wire x1="133.35" y1="88.9" x2="133.35" y2="91.44" width="0.1524" layer="91"/>
 <junction x="133.35" y="88.9"/>
-<pinref part="LCD1" gate="LCD" pin="GND@1"/>
+<pinref part="OLED" gate="LCD" pin="GND@1"/>
 <wire x1="133.35" y1="91.44" x2="133.35" y2="93.98" width="0.1524" layer="91"/>
 <junction x="133.35" y="91.44"/>
 <junction x="133.35" y="86.36"/>
@@ -1957,15 +1957,15 @@ Designed by Watterott electronic for senseBox https://sensebox.de</text>
 <junction x="139.7" y="24.13"/>
 </segment>
 <segment>
-<pinref part="LCD1" gate="LCD" pin="!RESET"/>
+<pinref part="OLED" gate="LCD" pin="!RESET"/>
 <pinref part="P+7" gate="VCC" pin="VCC"/>
 <wire x1="92.71" y1="139.7" x2="85.09" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="85.09" y1="139.7" x2="85.09" y2="144.78" width="0.1524" layer="91"/>
-<pinref part="LCD1" gate="LCD" pin="!CS"/>
+<pinref part="OLED" gate="LCD" pin="!CS"/>
 <wire x1="92.71" y1="116.84" x2="85.09" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="85.09" y1="116.84" x2="85.09" y2="129.54" width="0.1524" layer="91"/>
 <junction x="85.09" y="139.7"/>
-<pinref part="LCD1" gate="LCD" pin="BS1"/>
+<pinref part="OLED" gate="LCD" pin="BS1"/>
 <wire x1="85.09" y1="129.54" x2="85.09" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="92.71" y1="129.54" x2="85.09" y2="129.54" width="0.1524" layer="91"/>
 <junction x="85.09" y="129.54"/>
@@ -1975,7 +1975,7 @@ Designed by Watterott electronic for senseBox https://sensebox.de</text>
 <pinref part="P+9" gate="VCC" pin="VCC"/>
 </segment>
 <segment>
-<pinref part="LCD1" gate="LCD" pin="VBAT"/>
+<pinref part="OLED" gate="LCD" pin="VBAT"/>
 <pinref part="P+2" gate="VCC" pin="VCC"/>
 <wire x1="133.35" y1="119.38" x2="158.75" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="C8" gate="C" pin="2"/>
@@ -1983,7 +1983,7 @@ Designed by Watterott electronic for senseBox https://sensebox.de</text>
 <wire x1="165.1" y1="119.38" x2="165.1" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="100.33" x2="165.1" y2="119.38" width="0.1524" layer="91"/>
 <junction x="165.1" y="119.38"/>
-<pinref part="LCD1" gate="LCD" pin="VDD"/>
+<pinref part="OLED" gate="LCD" pin="VDD"/>
 <pinref part="C7" gate="C" pin="2"/>
 <wire x1="133.35" y1="114.3" x2="158.75" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="158.75" y1="114.3" x2="158.75" y2="100.33" width="0.1524" layer="91"/>
@@ -2004,10 +2004,10 @@ Designed by Watterott electronic for senseBox https://sensebox.de</text>
 <segment>
 <wire x1="90.17" y1="101.6" x2="85.09" y2="101.6" width="0.1524" layer="91"/>
 <label x="85.09" y="101.6" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="LCD1" gate="LCD" pin="D2/SDA"/>
+<pinref part="OLED" gate="LCD" pin="D2/SDA"/>
 <wire x1="92.71" y1="99.06" x2="90.17" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="90.17" y1="99.06" x2="90.17" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="LCD1" gate="LCD" pin="D1/DIN/SDA"/>
+<pinref part="OLED" gate="LCD" pin="D1/DIN/SDA"/>
 <wire x1="90.17" y1="101.6" x2="92.71" y2="101.6" width="0.1524" layer="91"/>
 <junction x="90.17" y="101.6"/>
 </segment>
@@ -2053,12 +2053,12 @@ Designed by Watterott electronic for senseBox https://sensebox.de</text>
 <segment>
 <wire x1="92.71" y1="104.14" x2="85.09" y2="104.14" width="0.1524" layer="91"/>
 <label x="85.09" y="104.14" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="LCD1" gate="LCD" pin="D0/SCK"/>
+<pinref part="OLED" gate="LCD" pin="D0/SCK"/>
 </segment>
 </net>
 <net name="SA0" class="0">
 <segment>
-<pinref part="LCD1" gate="LCD" pin="DC/I2C_SA0"/>
+<pinref part="OLED" gate="LCD" pin="DC/I2C_SA0"/>
 <wire x1="92.71" y1="109.22" x2="68.58" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="109.22" x2="68.58" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="R6" gate="R" pin="1"/>
@@ -2068,42 +2068,42 @@ Designed by Watterott electronic for senseBox https://sensebox.de</text>
 </net>
 <net name="C2N" class="0">
 <segment>
-<pinref part="LCD1" gate="LCD" pin="C2N"/>
+<pinref part="OLED" gate="LCD" pin="C2N"/>
 <wire x1="133.35" y1="124.46" x2="139.7" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="C9" gate="C" pin="1"/>
 </segment>
 </net>
 <net name="C2P" class="0">
 <segment>
-<pinref part="LCD1" gate="LCD" pin="C2P"/>
+<pinref part="OLED" gate="LCD" pin="C2P"/>
 <wire x1="133.35" y1="129.54" x2="139.7" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="C9" gate="C" pin="2"/>
 </segment>
 </net>
 <net name="C1N" class="0">
 <segment>
-<pinref part="LCD1" gate="LCD" pin="C1N"/>
+<pinref part="OLED" gate="LCD" pin="C1N"/>
 <wire x1="133.35" y1="134.62" x2="139.7" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="C10" gate="C" pin="1"/>
 </segment>
 </net>
 <net name="C1P" class="0">
 <segment>
-<pinref part="LCD1" gate="LCD" pin="C1P"/>
+<pinref part="OLED" gate="LCD" pin="C1P"/>
 <wire x1="133.35" y1="139.7" x2="139.7" y2="139.7" width="0.1524" layer="91"/>
 <pinref part="C10" gate="C" pin="2"/>
 </segment>
 </net>
 <net name="IREF" class="0">
 <segment>
-<pinref part="LCD1" gate="LCD" pin="IREF"/>
+<pinref part="OLED" gate="LCD" pin="IREF"/>
 <pinref part="R5" gate="R" pin="1"/>
 <wire x1="138.43" y1="99.06" x2="133.35" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VCH" class="0">
 <segment>
-<pinref part="LCD1" gate="LCD" pin="VCOMH"/>
+<pinref part="OLED" gate="LCD" pin="VCOMH"/>
 <pinref part="C5" gate="C" pin="2"/>
 <wire x1="133.35" y1="104.14" x2="146.05" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="146.05" y1="104.14" x2="146.05" y2="100.33" width="0.1524" layer="91"/>
@@ -2111,7 +2111,7 @@ Designed by Watterott electronic for senseBox https://sensebox.de</text>
 </net>
 <net name="VC" class="0">
 <segment>
-<pinref part="LCD1" gate="LCD" pin="VCC"/>
+<pinref part="OLED" gate="LCD" pin="VCC"/>
 <pinref part="C6" gate="C" pin="2"/>
 <wire x1="133.35" y1="109.22" x2="152.4" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="109.22" x2="152.4" y2="100.33" width="0.1524" layer="91"/>
